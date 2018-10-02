@@ -337,6 +337,8 @@ export default {
       bodyFormData.append('Make', this.form.make)
       bodyFormData.append('file[0]', document.getElementById('img').files[0])
       bodyFormData.append('Model', this.form.model)
+      bodyFormData.append('car', 'anything')
+      bodyFormData.append('assetId', 'anything')
 
       let self = this
       try {
