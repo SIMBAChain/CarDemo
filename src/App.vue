@@ -167,13 +167,13 @@
         </div>
       </md-app-drawer>
 
-      <md-app-content>
-        <div class="video-background">
+      <md-app-content class="bg-color">
+        <!--div class="video-background">
           <div class="video-foreground">
             <iframe src="https://www.youtube.com/embed/bhWJF9FlBqM?controls=0&showinfo=0&rel=0&autoplay=1&mute=1&loop=1&playlist=qghQ5eKGcyE" frameborder="0" allowfullscreen>
             </iframe>
           </div>
-        </div>
+        </div-->
         <router-view class="conent">
         </router-view>
       </md-app-content>
@@ -183,6 +183,9 @@
 </template>
 
 <style lang="scss" scoped>
+  .bg-color {
+    background-color: black;
+  }
   .wallet-icon {
     color: #43a047;
   }
