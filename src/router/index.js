@@ -1,28 +1,21 @@
 import Vue from 'vue'
-import Router from 'vue-router'
-import Home from '@/components/Home'
-import Post from '@/components/Post'
-import Get from '@/components/Get'
+import VueRouter from 'vue-router'
+import Car from '../views/Car.vue'
 
-Vue.use(Router)
+Vue.use(VueRouter)
 
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'Home',
-      component: Home,
-      alias: '/Home'
-    },
-    {
-      path: '/post',
-      name: 'Post',
-      component: Post
-    },
-    {
-      path: '/get',
-      name: 'Get',
-      component: Get
-    }
-  ]
+const routes = [
+  {
+    path: '/',
+    name: 'Car',
+    component: Car
+  }
+]
+
+const router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
+  routes
 })
+
+export default router
