@@ -3,20 +3,16 @@
 > A Vue.js project for Simbachain Dapp Client (Live Demo: https://cardemo.simbachain.com)
 
 ## Project setup
+
+##### 1. Create and configure an app on Simba Dashboard with the default `carDemo2` smart contract at `https://app.simbachain.com/`
+
+##### 2. Generate an `apiKey` for the app on `App-View` page
+
+##### 3. Open `src/store/modules/info.js` and replace `yourApiUrl` and `yourApiKey` with yours
+
 ```
 npm install
 ```
-
-# create and configure an app on Simba Dashboard 
-# with the default `carDemo2` smart contract
-# at https://app.simbachain.com/
-
-# generate an APIKEY on `App-View` page
-
-# open src/store/modules/info.js
-
-# replace `yourApiUrl` and `yourApiKey` with yours at line 3, 4
-
 
 ### Compiles and hot-reloads for development
 ```
